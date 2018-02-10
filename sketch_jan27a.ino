@@ -13,7 +13,9 @@ void setup() {
 
 void loop() {
   feny = analogRead(fe);
-    if( feny<0) Serial.print("Homalyos eloter");
+  Serial.print("Luminosity ");
+  Serial.print(feny);Serial.print(" ");
+    /*if( feny<0) Serial.print("Homalyos eloter");
     else if( feny<=1 && feny>0)Serial.print("Holdfeny");
     else if( feny<=10 && feny>1)Serial.print("Sotet szoba");
     else if( feny<=100 && feny>10)Serial.print("Vilagos szoba");
@@ -21,16 +23,15 @@ void loop() {
     else if( feny>400 && feny<=950)Serial.print("Napfelkelte");
     else if( feny>950 && feny<10000)Serial.print("Felhos nap");
     else if( feny>=10000 && feny<=25000)Serial.print("Napsutes");
-    else if( feny>25000)Serial.print("Nap");
+    else if( feny>25000)Serial.print("Nap");*/
 
     gaz=analogRead(A5);
-    if (gaz<250)Serial.print("Its good m8");
-        else Serial.print("U ded");
-
+    /*if (gaz<250)Serial.print("Its good m8");
+        else Serial.print("U ded");*/
+Serial.print("Gas ");Serial.print(gaz);Serial.print(" ");Serial.print("Temperature ");
     Serial.print((meleg*5/1024-0.5)*100);
 
     Serial.print(" ");
-    delay(200);
+    delay(2000);
 
 }
-
