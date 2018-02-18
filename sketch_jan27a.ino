@@ -14,7 +14,8 @@ void setup() {
 void loop() {
   feny = analogRead(fe);
   Serial.print("Luminosity ");
-  Serial.print(feny);Serial.print(" ");
+  Serial.print(feny);
+  Serial.print(" ");
     /*if( feny<0) Serial.print("Homalyos eloter");
     else if( feny<=1 && feny>0)Serial.print("Holdfeny");
     else if( feny<=10 && feny>1)Serial.print("Sotet szoba");
@@ -28,7 +29,10 @@ void loop() {
     gaz=analogRead(A5);
     /*if (gaz<250)Serial.print("Its good m8");
         else Serial.print("U ded");*/
-Serial.print("Gas ");Serial.print(gaz);Serial.print(" ");Serial.print("Temperature ");
+Serial.print("Gas ");
+Serial.print(gaz);
+ Serial.print(" ");
+ Serial.print("Temperature ");
     Serial.print((meleg*5/1024-0.5)*100);
 
     Serial.print(" ");
