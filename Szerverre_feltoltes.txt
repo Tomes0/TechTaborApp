@@ -1,5 +1,5 @@
 import sqlite3
-conn = sqlite3.connect('er.db')
+conn = sqlite3.connect('hun.db')
 c = conn.cursor()
 c.execute("INSERT INTO er VALUES (10,20,30,40)")
 conn.commit()
