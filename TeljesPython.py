@@ -7,7 +7,7 @@ conn = sqlite3.connect('ertekek.db')
 c = conn.cursor()
 i=0
 while 1:
-	i++
+	i=i+1
 	c.execute("INSERT INTO erzekeklok VALUES (i,strftime('%Y-%m-%d %H:%M:%S'),a,b,c,d)")
 	time.sleep (100)
 conn.commit()
