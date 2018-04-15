@@ -1,4 +1,7 @@
-  int feny=2;
+#include <dht.h>
+dht DHT;
+#define DHT11_PIN 7  
+int feny=2;
   int ho=A0;
   int fe=A2;
   int gaz=A5;
@@ -36,6 +39,12 @@ Serial.print(gaz);
     Serial.print((meleg*5/1024-0.5)*100);
 
     Serial.print(" ");
+           int chk = DHT.read11(DHT11_PIN);
+  Serial.print("Temperature = ");
+  Serial.print(DHT.temperature);
+  Serial.print("Humidity = ");
+  Serial.print(DHT.humidity);
+      Serial.print(" ");
     delay(2000);
 
 }
