@@ -18,16 +18,6 @@ while 1:
     sense.show_message('h= ', text_colour=[0, 100, 0])
     sense.show_message(humidity, text_colour=[0, 100, 0])
     sense.show_message('%', text_colour=[0, 100, 0] )
-    sonix1 = [
-    e, e, e, e, e, e, e, e,
-    r, r, r, r, r, r, r, r,
-    o, o, o, o, o, o, o, o,
-    y, y, y, y, y, y, y, y,
-    g, g, g, g, g, g, g, g,
-    b, b, b, b, b, b, b, b,
-    p, p, p, p, p, p, p, p,
-    e, e, e, e, e, e, e, e,
-    ]
-    sense.set_pixels (sonix1)
+
     
 
